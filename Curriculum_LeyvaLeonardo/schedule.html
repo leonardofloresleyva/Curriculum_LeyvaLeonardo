@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Horario</title>
+        <link href="./styles.css" rel="stylesheet">
     </head>
     <body>
         <!--Encabezado con sección de navegación-->
-        <headers>
-            <nav id="seccion_navegacion">
+        <headers id="cabecera">
+            <nav id="seccion-navegacion">
                 <a href="./index.html">Inicio</a>
                 <a href="./interests.html">Intereses</a>
                 <a href="./schedule.html">Horario</a>
@@ -21,7 +22,7 @@
             <section id="lista-materias">
                 <h2>Materias</h2>
                 <!--Formateado como tabla, para una mejor alineación-->
-                <table>
+                <table >
                     <tbody>
                         <tr>
                             <td><strong>Cultura de la legalidad: </strong></td>
@@ -58,7 +59,7 @@
             <section id="seccion-vista-semanal">
                 <h2>Vista de horario semanal</h2>
                 <!--Formateado como tabla, con sus secciones divididas-->
-                <table>
+                <table id="tabla-vista-semanal">
                     <!--Columnas-->
                     <thead>
                         <th>Hora</th>
@@ -70,124 +71,229 @@
                     </thead>
                     <!--Filas y datos-->
                     <tbody>
-                        <tr><td>07:00</td></tr>
+                        <tr>
+                            <td>07:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                         <!--Cultura de la legalidad-->
                         <tr>
                             <td>07:30</td>
-                            <td>Cultura de la legalidad</td>
+                            <td class="materia cultura-legalidad">Cultura de la legalidad</td>
                             <td></td>
-                            <td>Cultura de la legalidad</td>
+                            <td class="materia cultura-legalidad">Cultura de la legalidad</td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>08:00</td>
-                            <td>Cultura de la legalidad</td>
+                            <td class="materia cultura-legalidad">Cultura de la legalidad</td>
                             <td></td>
-                            <td>Cultura de la legalidad</td>
+                            <td class="materia cultura-legalidad">Cultura de la legalidad</td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>08:30</td>
-                            <td>Cultura de la legalidad</td>
+                            <td class="materia cultura-legalidad">Cultura de la legalidad</td>
                             <td></td>
-                            <td>Cultura de la legalidad</td>
+                            <td class="materia cultura-legalidad">Cultura de la legalidad</td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <!--Libres-->
-                        <tr><td>09:00</td></tr>
-                        <tr><td>09:30</td></tr>
-                        <tr><td>10:00</td></tr>
-                        <tr><td>10:30</td></tr>
-                        <tr><td>11:00</td></tr>
-                        <tr><td>11:30</td></tr>
-                        <tr><td>12:00</td></tr>
-                        <tr><td>12:30</td></tr>
-                        <tr><td>01:00</td></tr>
+                        <tr>
+                            <td>09:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>09:30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10:30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11:30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12:30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>01:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                         <!--Métodos numéricos-->
                         <tr>
                             <td>01:30</td>
                             <td></td>
-                            <td>Métodos Numéricos</td>
+                            <td class="materia metodos-numericos">Métodos Numéricos</td>
                             <td></td>
-                            <td>Métodos Numéricos</td>
+                            <td class="materia metodos-numericos">Métodos Numéricos</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>02:00</td>
                             <td></td>
-                            <td>Métodos Numéricos</td>
+                            <td class="materia metodos-numericos">Métodos Numéricos</td>
                             <td></td>
-                            <td>Métodos Numéricos</td>
+                            <td class="materia metodos-numericos">Métodos Numéricos</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>02:30</td>
                             <td></td>
-                            <td>Métodos Numéricos</td>
+                            <td class="materia metodos-numericos">Métodos Numéricos</td>
                             <td></td>
-                            <td>Métodos Numéricos</td>
+                            <td class="materia metodos-numericos">Métodos Numéricos</td>
+                            <td></td>
                         </tr>
                         <!--Administración de proyectos de software y Diseño de Sistemas Interactivos-->
                         <tr>
                             <td>03:00</td>
-                            <td>Admin. de Proyectos de Software</td>
-                            <td>Diseño de Sistemas Interacivos</td>
-                            <td>Admin. de Proyectos de Software</td>
-                            <td>Diseño de Sistemas Interacivos</td>
+                            <td class="materia administracion-proyectos">Admin. de Proyectos de Software</td>
+                            <td class="materia disenio-sistemas">Diseño de Sistemas Interacivos</td>
+                            <td class="materia administracion-proyectos">Admin. de Proyectos de Software</td>
+                            <td class="materia disenio-sistemas">Diseño de Sistemas Interacivos</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>03:30</td>
-                            <td>Admin. de Proyectos de Software</td>
-                            <td>Diseño de Sistemas Interacivos</td>
-                            <td>Admin. de Proyectos de Software</td>
-                            <td>Diseño de Sistemas Interacivos</td>
+                            <td class="materia administracion-proyectos">Admin. de Proyectos de Software</td>
+                            <td class="materia disenio-sistemas">Diseño de Sistemas Interacivos</td>
+                            <td class="materia administracion-proyectos">Admin. de Proyectos de Software</td>
+                            <td class="materia disenio-sistemas">Diseño de Sistemas Interacivos</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>04:00</td>
-                            <td>Admin. de Proyectos de Software</td>
-                            <td>Diseño de Sistemas Interacivos</td>
-                            <td>Admin. de Proyectos de Software</td>
-                            <td>Diseño de Sistemas Interacivos</td>
+                            <td class="materia administracion-proyectos">Admin. de Proyectos de Software</td>
+                            <td class="materia disenio-sistemas">Diseño de Sistemas Interacivos</td>
+                            <td class="materia administracion-proyectos">Admin. de Proyectos de Software</td>
+                            <td class="materia disenio-sistemas">Diseño de Sistemas Interacivos</td>
+                            <td></td>
                         </tr>
                         <!--Ingeniería de Requisitos y Aplicaciones web-->
                         <tr>
                             <td>04:30</td>
-                            <td>Ing. de Requisitos</td>
-                            <td>Aplicaciones Web</td>
+                            <td class="materia ingenieria-requisitos">Ing. de Requisitos</td>
+                            <td class="materia aplicaciones-web">Aplicaciones Web</td>
                             <td></td>
-                            <td>Aplicaciones Web</td>
+                            <td class="materia aplicaciones-web">Aplicaciones Web</td>
+                            <td class="materia ingenieria-requisitos">Ing. de Requisitos</td>
                         </tr>
                         <tr>
                             <td>05:00</td>
-                            <td>Ing. de Requisitos</td>
-                            <td>Aplicaciones Web</td>
+                            <td class="materia ingenieria-requisitos">Ing. de Requisitos</td>
+                            <td class="materia aplicaciones-web">Aplicaciones Web</td>
                             <td></td>
-                            <td>Aplicaciones Web</td>
+                            <td class="materia aplicaciones-web">Aplicaciones Web</td>
+                            <td class="materia ingenieria-requisitos">Ing. de Requisitos</td>
                         </tr>
                         <tr>
                             <td>05:30</td>
-                            <td>Ing. de Requisitos</td>
-                            <td>Aplicaciones Web</td>
+                            <td class="materia ingenieria-requisitos">Ing. de Requisitos</td>
+                            <td class="materia aplicaciones-web">Aplicaciones Web</td>
                             <td></td>
-                            <td>Aplicaciones Web</td>
+                            <td class="materia aplicaciones-web">Aplicaciones Web</td>
+                            <td class="materia ingenieria-requisitos">Ing. de Requisitos</td>
                         </tr>
                         <!--Arquitecura de software-->
                         <tr>
                             <td>06:00</td>
-                            <td>Arquitectura de Software</td>
+                            <td class="materia arquitectura-software">Arquitectura de Software</td>
                             <td></td>
-                            <td>Arquitectura de Software</td>
+                            <td class="materia arquitectura-software">Arquitectura de Software</td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>06:30</td>
-                            <td>Arquitectura de Software</td>
+                            <td class="materia arquitectura-software">Arquitectura de Software</td>
                             <td></td>
-                            <td>Arquitectura de Software</td>
+                            <td class="materia arquitectura-software">Arquitectura de Software</td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>07:00</td>
-                            <td>Arquitectura de Software</td>
+                            <td class="materia arquitectura-software">Arquitectura de Software</td>
                             <td></td>
-                            <td>Arquitectura de Software</td>
+                            <td class="materia arquitectura-software">Arquitectura de Software</td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <!--Libres-->
-                        <tr><td>07:30</td></tr>
-                        <tr><td>08:00</td></tr>
+                        <tr>
+                            <td>07:30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
                 </table>
             </section>
