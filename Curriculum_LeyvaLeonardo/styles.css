@@ -1,0 +1,87 @@
+body{
+    font-family: Trebuchet MS, sans-serif;
+    margin: 0px;
+}
+
+main{
+    position: relative;
+    left: 50px;
+}
+
+#seccion-navegacion{
+    background-color: #003049   ;
+    padding: 20px;
+    text-align: center;
+}
+
+#seccion-navegacion > a{
+    color: white;
+    padding: 0px 15px;
+}
+
+#seccion-portada > h1{
+    font-size: 2em;
+}
+
+footer{
+    color: white;
+    background-color: #003049;
+    padding: 20px;
+    text-align: center;
+}
+
+#tabla-vista-semanal{
+    padding: 0px 0px;
+    margin: 20px 0px;
+    border: thin solid black;
+    background-color: black;
+}
+#tabla-vista-semanal td{
+    border: medium solid white;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+#tabla-vista-semanal th{
+    background-color: lightgray;
+    border: medium solid lightgray;
+    padding: 5px 10px;
+}
+
+#tabla-vista-semanal .cultura-legalidad{
+    border: medium solid #a7c957;
+    background-color: #a7c957;
+}
+
+#tabla-vista-semanal .metodos-numericos{
+    border: medium solid #403d39;
+    background-color: #403d39;
+    color: white;
+}
+
+#tabla-vista-semanal .administracion-proyectos{
+    border: medium solid #4cc9f0;
+    background-color: #4cc9f0;
+}
+
+#tabla-vista-semanal .disenio-sistemas{
+    border: medium solid #7209b7;
+    background-color: #7209b7;
+    color: white;
+}
+
+#tabla-vista-semanal .aplicaciones-web{
+    border: medium solid #d00000;
+    background-color: #d00000;
+    color: white;
+}
+
+#tabla-vista-semanal .ingenieria-requisitos{
+    border: medium solid #ffbd00;
+    background-color: #ffbd00;
+}
+
+#tabla-vista-semanal .arquitectura-software{
+    border: medium solid #bc6c25;
+    background-color: #bc6c25;
+}
