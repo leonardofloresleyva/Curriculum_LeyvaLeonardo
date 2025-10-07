@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --primary-bg-color: #003049;
+    --cultura-legalidad: #a7c957;
+    --metodos-numericos: #403d39;
+    --administracion-proyectos: #4cc9f0;
+    --disenio-sistemas: #7209b7;
+    --aplicaciones-web: #d00000;
+    --ingenieria-requisitos: #ffbd00;
+    --arquitectura-software: #bc6c25;
+    --celda-seleccionada: #82f2e4;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0px;
+}
+
+body::selection{
+    background-color: black;
+    color: #0bff00;
+}
+
+#seccion-navegacion{
+    background-color: var(--primary-bg-color);
+    padding: 20px;
+    text-align: center;
+}
+
+#seccion-navegacion > a{padding: 0px 15px;}
+
+#seccion-navegacion > a:link{color: white;}
+
+#seccion-navegacion > a:visited{color: yellow;}
+
+footer{
+    clear: both;
+    color: white;
+    background-color: var(--primary-bg-color);
+    padding: 20px;
+    text-align: center;
+}

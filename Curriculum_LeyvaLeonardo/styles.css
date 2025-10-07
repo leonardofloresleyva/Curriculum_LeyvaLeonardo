@@ -1,45 +1,72 @@
-body{
-    font-family: Trebuchet MS, sans-serif;
-    margin: 0px;
-}
+
+@import url(./global.css);
 
 main{
     position: relative;
     left: 50px;
 }
 
-#seccion-navegacion{
-    background-color: #003049   ;
-    padding: 20px;
-    text-align: center;
+#seccion-portada{
+    margin: auto;
+    display: block;
 }
 
-#seccion-navegacion > a{
-    color: white;
-    padding: 0px 15px;
+#seccion-portada > h1{font-size: 2em;}
+
+#seccion-portada > img{
+    float: left;
+    margin: 0px 20px 20px 0px;
+    border: 20px ridge #a16e16;
 }
 
-#seccion-portada > h1{
-    font-size: 2em;
+#seccion-portada > p{
+    position: relative;
+    top: 150px;
 }
 
-footer{
-    color: white;
-    background-color: #003049;
-    padding: 20px;
-    text-align: center;
-}
+.contenido{clear: left;}
+
+#seccion-biografia > h2::after{content: "📖";}
+
+#seccion-experiencia-laboral > h2::after{content: "💼";}
+
+#seccion-educacion > h2::after{content: "🎓";}
+
+#seccion-idiomas > h2::after{content: "🌐";}
+
+#videojuegos::before{content: "🎮";}
+
+#futbol::before{content: "⚽";}
+
+#libros::before{content: "📕";}
+
+#series-peliculas::before{content: "🎬";}
+
+#youtube::before{content: "▶️";}
+
+#desarrollo-web::before{content: "🖥️";}
+
+#liderazgo::before{content: "👑";}
+
+#curriculum::before{content: "📋";}
 
 #tabla-vista-semanal{
-    padding: 0px 0px;
-    margin: 20px 0px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: thin solid black;
     background-color: black;
 }
+
 #tabla-vista-semanal td{
     border: medium solid white;
     padding: 5px 10px;
     background-color: white;
+}
+
+#tabla-vista-semanal td:hover{
+    background-color: var(--celda-seleccionada);
+    border: medium solid var(--celda-seleccionada);
 }
 
 #tabla-vista-semanal th{
@@ -49,39 +76,39 @@ footer{
 }
 
 #tabla-vista-semanal .cultura-legalidad{
-    border: medium solid #a7c957;
-    background-color: #a7c957;
+    border: medium solid var(--cultura-legalidad);
+    background-color: var(--cultura-legalidad);
 }
 
 #tabla-vista-semanal .metodos-numericos{
-    border: medium solid #403d39;
-    background-color: #403d39;
+    border: medium solid var(--metodos-numericos);
+    background-color: var(--metodos-numericos);
     color: white;
 }
 
 #tabla-vista-semanal .administracion-proyectos{
-    border: medium solid #4cc9f0;
-    background-color: #4cc9f0;
+    border: medium solid var(--administracion-proyectos);
+    background-color: var(--administracion-proyectos);
 }
 
 #tabla-vista-semanal .disenio-sistemas{
-    border: medium solid #7209b7;
-    background-color: #7209b7;
+    border: medium solid var(--disenio-sistemas);
+    background-color: var(--disenio-sistemas);
     color: white;
 }
 
 #tabla-vista-semanal .aplicaciones-web{
-    border: medium solid #d00000;
-    background-color: #d00000;
+    border: medium solid var(--aplicaciones-web);
+    background-color: var(--aplicaciones-web);
     color: white;
 }
 
 #tabla-vista-semanal .ingenieria-requisitos{
-    border: medium solid #ffbd00;
-    background-color: #ffbd00;
+    border: medium solid var(--ingenieria-requisitos);
+    background-color: var(--ingenieria-requisitos);
 }
 
 #tabla-vista-semanal .arquitectura-software{
-    border: medium solid #bc6c25;
-    background-color: #bc6c25;
+    border: medium solid var(--arquitectura-software);
+    background-color: var(--arquitectura-software);
 }
